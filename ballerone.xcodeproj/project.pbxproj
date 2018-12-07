@@ -15,6 +15,9 @@
 		E6B3126A21B9CC0200EB1F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6B3126821B9CC0200EB1F34 /* LaunchScreen.storyboard */; };
 		E6B3127521B9CC0200EB1F34 /* balleroneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3127421B9CC0200EB1F34 /* balleroneTests.swift */; };
 		E6B3128021B9CC0200EB1F34 /* balleroneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3127F21B9CC0200EB1F34 /* balleroneUITests.swift */; };
+		E6B3128F21B9D31900EB1F34 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3128E21B9D31900EB1F34 /* Extensions.swift */; };
+		E6B3129121B9D3B600EB1F34 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3129021B9D3B600EB1F34 /* Plane.swift */; };
+		E6B3129521B9EE1D00EB1F34 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3129421B9EE1D00EB1F34 /* Ball.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E6B3127B21B9CC0200EB1F34 /* balleroneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = balleroneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B3127F21B9CC0200EB1F34 /* balleroneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = balleroneUITests.swift; sourceTree = "<group>"; };
 		E6B3128121B9CC0200EB1F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6B3128E21B9D31900EB1F34 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E6B3129021B9D3B600EB1F34 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		E6B3129421B9EE1D00EB1F34 /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		E6B3125C21B9CC0000EB1F34 /* ballerone */ = {
 			isa = PBXGroup;
 			children = (
+				E6B3128D21B9D2EB00EB1F34 /* Helpers */,
 				E6B3125D21B9CC0000EB1F34 /* AppDelegate.swift */,
 				E6B3125F21B9CC0000EB1F34 /* art.scnassets */,
 				E6B3126121B9CC0000EB1F34 /* ViewController.swift */,
@@ -126,6 +133,16 @@
 				E6B3128121B9CC0200EB1F34 /* Info.plist */,
 			);
 			path = balleroneUITests;
+			sourceTree = "<group>";
+		};
+		E6B3128D21B9D2EB00EB1F34 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E6B3128E21B9D31900EB1F34 /* Extensions.swift */,
+				E6B3129021B9D3B600EB1F34 /* Plane.swift */,
+				E6B3129421B9EE1D00EB1F34 /* Ball.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6B3126221B9CC0000EB1F34 /* ViewController.swift in Sources */,
+				E6B3128F21B9D31900EB1F34 /* Extensions.swift in Sources */,
+				E6B3129521B9EE1D00EB1F34 /* Ball.swift in Sources */,
+				E6B3129121B9D3B600EB1F34 /* Plane.swift in Sources */,
 				E6B3125E21B9CC0000EB1F34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NVTC8T4LT7;
 				INFOPLIST_FILE = ballerone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NVTC8T4LT7;
 				INFOPLIST_FILE = ballerone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
